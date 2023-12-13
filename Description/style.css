@@ -1,0 +1,483 @@
+@font-face {
+  font-family: "My_Fonts";
+  src: url("Scream.ttf");
+}
+
+@font-face {
+  font-family: "nav";
+  src: url("Oswald.ttf");
+}
+
+@font-face {
+  font-family: "thin";
+  src: url("AdventPro.ttf");
+}
+
+@font-face {
+  font-family: "Name";
+  src: url("GreatVibes.ttf");
+}
+@font-face {
+  font-family: "intro";
+  src: url("Boodoe.otf");
+}
+@font-face {
+  font-family: "abtme";
+  src: url("ChauPhilomeneOne.ttf");
+}
+@font-face {
+  font-family: "abtme2";
+  src: url("Architex.ttf");
+}
+@font-face {
+  font-family: "heading";
+  src: url("Architex.ttf");
+}
+@font-face {
+  font-family: "des";
+  src: url("Cocogoose.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #000814;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 7px 100px;
+
+  background: #000814;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  box-shadow: 0 10px 25px rgba(5, 24, 69, 0.5);
+}
+
+.logo {
+  font-size: 37px;
+  text-decoration: none;
+  font-weight: 800;
+  position: relative;
+  color: #fff;
+
+  font-family: "My_Fonts", sans-serif;
+}
+
+.logo::first-letter {
+  color: #42ffff;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 16.5px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+  font-family: "nav", sans-serif;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #abffff;
+  transition: width 0.3s ease-in-out; /* Apply transition specifically for width */
+  visibility: hidden;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+  visibility: visible;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.left-div {
+  flex: 1;
+  padding-top: 100px;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 200px;
+}
+
+.right-div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding-top: 55px;
+}
+
+.right-div img {
+  max-width: 80%;
+  height: auto;
+}
+.intro1 {
+  padding: 25px;
+  font-family: "intro", sans-serif;
+  letter-spacing: 6px;
+  font-size: 75px;
+}
+
+.first {
+  font-family: "thin", sans-serif;
+  color: rgb(230, 230, 230);
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.first-let {
+  color: #42ffff;
+  font-family: "Name",sans-serif;
+}
+
+.name {
+  font-family: "Name",sans-serif;
+}
+
+.oneline {
+  font-size: 25px;
+  font-family: "abtme2",sans-serif;
+  letter-spacing: 2px;
+  color: #daf5f5;
+  padding-left: 8px;
+}
+
+.line {
+  padding-top: px;
+  position: relative;
+  height: 1px; /* Set line thickness */
+  margin: 20px 0;
+  color: #000814; /* Adjust margin as needed */
+}
+
+.line::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* Adjust this value to control the shadow position */
+  left: 0;
+  width: 100%;
+  height: 10px; /* Adjust shadow thickness */
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    #05184580
+  ); /* Apply gradient as shadow */
+}
+
+.flex-container-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Adjust alignment */
+}
+
+.abtimg {
+  flex: 1;
+  border: 20px; /* Occupy available space */
+  /* Other styles specific to the image container */
+}
+
+.abtimg img {
+  max-width: 100%; /* Adjust as needed */
+  height: auto;
+}
+
+.abtme {
+  flex: 1; /* Occupy available space */
+  color: white;
+  padding: 0 20px;
+  margin: 90px;
+  flex-direction: column; /* Adjust padding */
+}
+
+.about-me-txt {
+  font-size: 50px;
+  letter-spacing: 3px;
+  color: #abffff;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-family: abtme2, sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+.navbar2 a {
+  position: relative;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+  font-family: "nav",sans-serif;
+  margin-right: 25px;
+}
+
+.navbar2 a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #42ffff;
+  transition: width 0.3s ease-in-out; /* Apply transition specifically for width */
+  visibility: hidden;
+}
+
+.navbar2 a:hover::before {
+  width: 100%;
+  visibility: visible;
+}
+
+.abt {
+  font-family: heading,sans-serif;
+  color: #42ffff;
+  letter-spacing: 2px;
+  margin-top: 30px;
+}
+
+.abt2 {
+  font-family: des,sans-serif;
+  font-size: 20px;
+  letter-spacing: 1.7px;
+  margin-bottom: 60px;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #000814;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+}
+
+.card img {
+  height: 500px;
+  width: 350px;
+  transition: 0.5s;
+  border-radius: 3px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  height: 500px;
+  width: 350px;
+  margin: 50px;
+  box-shadow: 5px 5px 20px #05184580;
+  overflow: hidden;
+  position: relative;
+}
+
+.intro {
+  position: absolute;
+  bottom: 240;
+  height: 70px;
+  width: 350px;
+  padding: 6px;
+  box-sizing: border-box;
+  background: rgba(27, 27, 27, 0.5);
+  color: #fff;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.cardheading {
+  font-size: 35px;
+  margin-bottom: 6px;
+  font-family: abtme,sans-serif;
+}
+
+.cardintro {
+  font-size: 14px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover .intro {
+  height: 220px;
+  bottom: 0;
+}
+
+.card:hover .cardintro {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card:hover img {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+.flex-container-2 {
+  margin-bottom: 20px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.contact-details {
+  font-family: intro,sans-serif;
+  align-items: center;
+  margin-top: 50px;
+}
+.contact-details h2 {
+  color: #42ffff;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+.email img {
+  height: 40px;
+  width: auto;
+  margin-right: 40px;
+}
+
+.email p {
+  font-size: 40px;
+  font-family: abtme2,sans-serif;
+  color: #fff;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-right: 50px;
+}
+.phone img {
+  height: 40px;
+  width: auto;
+  margin-right: 40px;
+}
+.phone p {
+  font-size: 40px;
+  font-family: abtme2,sans-serif;
+  color: #fff;
+}
+
+.cv-button {
+  font-size: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 50px;
+  background-color: #abffff;
+  padding: 10px 15px;
+  font-family: abtme,sans-serif;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.social-media img {
+  height: 50px;
+  width: auto;
+  padding-left: 40px;
+  margin-top: 50px;
+  text-align: left;
+}
+
+.form-section {
+  font-family: intro,sans-serif;
+  align-items: center;
+  /* margin-top: 50px; */
+  margin-left: 200px;
+}
+
+.form-section form label,
+.form-section form input,
+.form-section form textarea,
+.form-section form input[type="submit"] {
+  display: block;
+  margin-bottom: 10px; /* Adjust the spacing between each label and input */
+}
+
+.form-section h2 {
+  margin-bottom: 50px;
+  font-size: 50px;
+  color: #42ffff;
+}
+
+.form-section form label {
+  font-size: 25px;
+}
+
+.form-section form input[type="text"],
+.form-section form input[type="email"],
+.form-section form textarea {
+  width: 100%;
+  height: 30%;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.form-section input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #abffff;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+  font-family: abtme,sans-serif;
+}
+
+#message {
+  height: 100px;
+}
+
+.head {
+  font-size: 50px;
+  margin-left: 200px;
+  margin-top: 30px;
+  color: #42ffff;
+  font-family: abtme,sans-serif;
+  letter-spacing: 3px;
+}
