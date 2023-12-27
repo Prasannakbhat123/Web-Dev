@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+@font-face {
+    font-family: "des";
+    src: url("fanlste.otf");
+  }
+.heading {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .heading span {
+    color: #ffc107;
+    text-transform: uppercase;
+  }
+
+  
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    font-size: 15px;
+    color: #fff;
+    background: #ffc107;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    letter-spacing: 0.2rem;
+  }
+
+  /* .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 20px;
+  } */
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .box-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+  
+
+  
+
+  .menu .box-container .box {
+    padding: 3rem;
+    text-align: center;
+    border: 0.2rem solid #ffc107;
+  }
+  
+  .menu .box-container .box img {
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .menu .box-container .box h3 {
+    color: #fff;
+    font-size: 30px;
+    padding: 1rem 0;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .menu .box-container .box .price {
+    color: #fff;
+    font-size: 25px;
+    padding: 2px 0;
+    font-family:des, sans-serif;
+  }
+  
+
+  
+  .menu .box-container .box:hover {
+    background: #443300;
+    transition: 0.5s;
+  }
+
+  

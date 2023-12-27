@@ -1,0 +1,51 @@
+
+@font-face {
+    font-family: "heading";
+    src: url("Architex.ttf");
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+ .review{
+    background-color: black;
+    margin: 30px;
+    margin-top: 60px;
+    border-radius: 30px;
+    opacity: 0.9;
+ } 
+
+.review .box-container .box {
+    border: 0.2rem solid #ffc107;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+  
+  .review .box-container .box p {
+    font-size: 25px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 2rem 0;
+    font-family: heading,sans-serif;
+  }
+  
+  .review .box-container .box .user {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .review .box-container .box h3 {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #ffc107;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .heading{
+    padding: 0;
+  }
+
+  
+
